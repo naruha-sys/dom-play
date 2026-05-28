@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <style>
+        #play span {
+            background-color: yellow;
+        }
+  </style>
  </head>
  <body>
      <header>
@@ -18,10 +23,16 @@
      </header>
      
    <main class="wrapper">
-    <p>Content goes here</p>
+    <p>
+        <div id="play">
+            <p><span data-actor="hamlet">Hamlet: To be or not to be?</span></p>
+            <p><span data-actor="skull">Skull: Are you talking to me?</span></p>
+            <p><span data-actor="hamlet">Hamlet: What did you say?</span></p>
+        </div>
+    </p>
      <footer>
       <p><small>&copy; 2026 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+          Uran Hayashida, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
      </p>
