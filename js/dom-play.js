@@ -27,10 +27,11 @@ for (const mySpan of spans) {
 }
 
 function highlight(el){
-  
-    if(el.style.backgroundColor == 'white'){//make it yellow!
-        el.style.backgroundColor='yellow';
-    }else{//yellow?  make it white!
+
+    if(el.style.backgroundColor == 'yellow'){//make it yellow!
         el.style.backgroundColor='white';
+    }else{//yellow?  make it white!
+        el.style.backgroundColor='yellow';
     }
+
 }
