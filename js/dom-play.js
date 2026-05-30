@@ -19,9 +19,18 @@ console.log(spans);
 
 
 for (const mySpan of spans) {
-    //mySpan.style.backgroundColor = "yellow";
     let actor = mySpan.dataset.actor;
     mySpan.addEventListener("click",function(ev){
-        alert("I'm" + actor);
+        //alert("I'm " + actor);
+        highlight(mySpan);
     });
+}
+
+function highlight(el){
+  
+    if(el.style.backgroundColor == 'white'){//make it yellow!
+        el.style.backgroundColor='yellow';
+    }else{//yellow?  make it white!
+        el.style.backgroundColor='white';
+    }
 }

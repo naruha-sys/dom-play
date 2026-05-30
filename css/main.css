@@ -2,10 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-#play span{
-    background-color: yellow;
-}
-
 html {
     background-color: lightgray;
     font-family: 'Quicksand', sans-serif;
