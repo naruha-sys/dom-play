@@ -20,18 +20,21 @@ console.log(spans);
 
 for (const mySpan of spans) {
     let actor = mySpan.dataset.actor;
+
     mySpan.addEventListener("click",function(ev){
-        //alert("I'm " + actor);
-        highlight(mySpan);
+        highlightActor(actor);
     });
 }
 
-function highlight(el){
+function highlightActor(actor) {
 
-    if(el.style.backgroundColor == 'yellow'){//make it yellow!
-        el.style.backgroundColor='white';
-    }else{//yellow?  make it white!
-        el.style.backgroundColor='yellow';
-    }
-
+       //loop all spans
+       for(const mySpan of spans){
+             // highlight current actor
+            if (actor == mySpan.dataset.actor) {
+                mySpan.style.backgroundColor = "yellow";
+            } else {
+                mySpan.style.backgroundColor = "white";
+            }
+       }
 }
