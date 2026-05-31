@@ -9,23 +9,34 @@
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1>Interactive Script Rehearsal Tool</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <a href="#" target="_blank">Interactive Script Rehearsal</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
      
    <main class="wrapper">
     <p>
-        <div id="play">
-            <p><span data-actor="hamlet">Hamlet: To be or not to be?</span></p>
-            <p><span data-actor="skull">Skull: Are you talking to me?</span></p>
-            <p><span data-actor="hamlet">Hamlet: What did you say?</span></p>
-        </div>
+      <div id="play">
+          <p><span data-actor="hamlet">Hamlet: To be or not to be?</span></p>
+          <p><span data-actor="skull">Skull: Are you talking to me?</span></p>
+          <p><span data-actor="hamlet">Hamlet: What did you say?</span></p>
+          <p><span data-actor="skull">Skull: I didn't say anything.</span></p>
+          <p><span data-actor="horatio">Horatio: What happened?</span></p>
+          <p><span data-actor="skull">Skull: Who are you?</span></p>
+          <p><span data-actor="horatio">Horatio: What did you say?</span></p>
+      </div>
     </p>
-     <footer>
+    <p style="font-size: 0.8rem;border-top: 1px solid #ddd;">
+      This web application is designed as a rehearsal tool for actors.
+      When a user clicks on a specific line or character's name, the page automatically
+      highlights all lines spoken by that character.
+      At the same time, any highlighted lines
+      from other characters are un-highlighted.
+    </p>
+    <footer>
       <p><small>&copy; 2026 by 
           Uran Hayashida, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
